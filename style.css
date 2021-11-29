@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'SangBleu';
+    src: url('font/SangBleuEmpireTrial-Regular.otf');
+}
+@font-face {
+    font-family: 'SangBleu Italic';
+    src: url('font/SangBleuEmpireTrial-RegularItalic.otf');
+}
+@font-face {
+    font-family: 'Simplifica';
+    src: url('font/Simplifica\ Typeface.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: SangBleu;
+    scroll-behavior: smooth;
+    color: rgb(22, 22, 22);
+    cursor: pointer;
+}
+ 
+body{
+    width: 100%;
+    /*background: red;*/
+    background: #fffff7;
+}
+.container{
+    padding: 100px 200px; 
+}
+header{
+    font-family: Simplifica;
+    height: 50px;
+    /*background: blue;*/
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    top: 20px;
+    background-color: rgb(255, 255, 247, 0.5);
+    z-index: 1000;
+    
+}
+header h2{
+    font-family: Simplifica;
+    font-size: 2em;
+    margin-right: 700px;
+    letter-spacing: 0.05em;
+    font-weight: lighter;
+    margin-bottom: 28px;
+
+}
+header h2 span{
+    font-family: clash display;
+    font-size: 2.5em;
+    color: #cfbda8;
+}
+header nav ul a:nth-child(1) li{
+    font-family: Simplifica;
+    display: inline;
+    font-size: 1.5em;
+    padding: 0 3.5em;
+    border-right: .5px solid grey;
+
+}
+header nav ul a:nth-child(2) li{
+    font-family: Simplifica;
+    display: inline;
+    font-size: 1.5em;
+    padding: 0 3.5em;
+    border-right: .5px solid grey;
+}
+header nav ul a:nth-child(3) li{
+    font-family: Simplifica;
+    display: inline;
+    font-size: 1.5em;
+    padding: 0 3.5em;
+}
+
+header nav ul a:visited li{
+    color: rgb(22, 22, 22);
+
+}
+header nav ul a:hover li{
+    color: #cfbda8;
+}
+
+#central-text{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#central-text h1:nth-child(1){
+    font-family: Sangbleu Italic;
+    font-size: 13em;
+    font-weight: lighter;
+    line-height: 7px;
+    margin-left: -150px;
+}
+#central-text h1:nth-child(2){
+    font-family: clash display regular;
+    font-size: 13em;
+    font-weight: bolder;
+    line-height: 292px;
+    margin-left: -850px;
+
+
+}
+#central-text h1:nth-child(3){
+    font-family: Sangbleu;
+    font-size: 13em;
+    font-weight: lighter;
+    line-height: 21px;
+    margin-left: 290px;
+    position: absolute;
+    top: 844px;
+    z-index: 100;
+
+}
+#first {
+    position: absolute;
+    width: 510px;
+    height: auto;
+    left: 1830px;
+    top: 880px;
+    z-index: 10;
+    transition: width .5s ease-in-out;
+}
+#first:hover{
+    width: 600px;
+}
+.gallery{
+    width: 100%;
+    height: 200%;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 2vw);
+    grid-gap: 15px;
+    margin-top: 600px;
+}
+.gallery-items {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 12;
+    grid-row-end: 17;
+    margin-right: -15px;
+}
+.gallery__item--2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.gallery__item--5 {
+    z-index: 100;
+    grid-column-start: 6;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 18;
+    /* margin-top: 15px; */
+    /* flex-wrap: nowrap; */
+    border-top: 16px #fffff7 solid;
+    border-left: 16px #fffff7 solid;
+    border-right: 18px #fffff7 solid;
+    border-bottom: 20px #fffff7 solid ;
+    padding: -10px;
+}
+.gallery__item--6 {
+    grid-column-start: 6;
+    grid-column-end: 17;
+    grid-row-start: 1;
+    grid-row-end: 10;
+    
+}
+.gallery__item--7 {
+    grid-column-start: 9;
+    grid-column-end: 17;
+    grid-row-start: 10;
+    grid-row-end: 17;
+    
+}
+.gallery__item--8 {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 10;
+    
+}
+.aqua{
+    font-family: Sangbleu Italic;
+    font-size: 6em;
+    position: relative;
+    color: rgb(22, 22, 22);
+    font-weight: lighter;
+    top: -1321px;
+    left: 474px;
+    z-index: 100;
+    width: 200px;
+    transition: font-size .5s ease-in-out;
+}
+.aqua:hover{
+    font-size: 7em;
+}
+h1 .couleur{
+    color: #fffff7;
+}
+.h1{
+    font-family: Sangbleu Italic;
+    font-size: 3em;
+    font-weight: lighter;
+    transition: font-size .5s ease-in-out;
+}
+.h1:hover{
+    font-size: 7em;
+}
+.history{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.history div{
+    margin-right: 2em;    
+    width: 33%;
+    word-wrap: break-word;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+
+}
+.©{
+    float: right;
+}
